@@ -21,7 +21,7 @@
 # CONFIGURATION VARIABLES AND PATHS
 #==================================================================================================
 
-PSL=/users/GR/mb/jquilez/projects/parallel_sequencing_lives
+PSL="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../.."
 
 # variables
 samples="dc3a1e069_51720e9cf b1913e6c1_51720e9cf dc3a1e069_ec92aa0bb b7fa2d8db_bfac48760"

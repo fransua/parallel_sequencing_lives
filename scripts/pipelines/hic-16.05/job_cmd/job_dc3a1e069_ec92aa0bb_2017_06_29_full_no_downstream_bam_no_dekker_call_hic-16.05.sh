@@ -3,8 +3,8 @@
 #$ -q long-sl7
 #$ -l virtual_free=100G
 #$ -l h_rt=100:00:00
-#$ -o /users/GR/mb/jquilez/projects/parallel_sequencing_lives/scripts/pipelines/hic-16.05/job_out/job_dc3a1e069_ec92aa0bb_2017_06_29_full_no_downstream_bam_no_dekker_call_hic-16.05_$JOB_ID.out
-#$ -e /users/GR/mb/jquilez/projects/parallel_sequencing_lives/scripts/pipelines/hic-16.05/job_out/job_dc3a1e069_ec92aa0bb_2017_06_29_full_no_downstream_bam_no_dekker_call_hic-16.05_$JOB_ID.err
+#$ -o "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../../../.."/scripts/pipelines/hic-16.05/job_out/job_dc3a1e069_ec92aa0bb_2017_06_29_full_no_downstream_bam_no_dekker_call_hic-16.05_$JOB_ID.out
+#$ -e "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../../../.."/scripts/pipelines/hic-16.05/job_out/job_dc3a1e069_ec92aa0bb_2017_06_29_full_no_downstream_bam_no_dekker_call_hic-16.05_$JOB_ID.err
 #$ -j y
 #$ -M javier.quilez@crg.eu
 #$ -m abe
@@ -60,11 +60,11 @@ pis=500000
 pids=250000
 pnt=0.1
 CUSTOM_OUT=scripts/pipelines/hic-16.05/test
-PIPELINE=/users/GR/mb/jquilez/projects/parallel_sequencing_lives/scripts/pipelines/hic-16.05
+PIPELINE="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../../../.."/scripts/pipelines/hic-16.05
 config=scripts/pipelines/hic-16.05/hic.config
-path_job_file=/users/GR/mb/jquilez/projects/parallel_sequencing_lives/scripts/pipelines/hic-16.05/job_cmd/job_dc3a1e069_ec92aa0bb_2017_06_29_full_no_downstream_bam_no_dekker_call_hic-16.05.sh
+path_job_file="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../../../.."/scripts/pipelines/hic-16.05/job_cmd/job_dc3a1e069_ec92aa0bb_2017_06_29_full_no_downstream_bam_no_dekker_call_hic-16.05.sh
 
-PSL=/users/GR/mb/jquilez/projects/parallel_sequencing_lives
+PSL="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../../../.."
 
 # =================================================================================================
 # CODE EXECUTION

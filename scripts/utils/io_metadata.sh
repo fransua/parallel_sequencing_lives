@@ -23,7 +23,7 @@
 # CONFIGURATION VARIABLES AND PATHS
 #==================================================================================================
 
-PSL=/users/GR/mb/jquilez/projects/parallel_sequencing_lives
+PSL="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../.."
 
 # get additional variables from the script parameters
 while getopts ":m:s:p:t:a:v:u:" opt; do

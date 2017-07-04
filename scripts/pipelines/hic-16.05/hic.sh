@@ -1,5 +1,5 @@
 
-PSL=/users/GR/mb/jquilez/projects/parallel_sequencing_lives
+PSL="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../../.."
 
 # =================================================================================================
 # CODE EXECUTION
